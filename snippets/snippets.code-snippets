@@ -1,16 +1,80 @@
 {
+    "c:out Template": {
+        "prefix": "!out",
+        "body": [
+            "<c:if value=\"\" />"
+        ],
+        "description": "Generate c:out Template"
+    },
+    "c:set Template": {
+        "prefix": "!set",
+        "body": [
+            "<c:set var=\"\" scope=\"\" value=\"\"/>"
+        ],
+        "description": "Generate c:set Template"
+    },
+    "c:remove Template": {
+        "prefix": "!remove",
+        "body": [
+            "<c:remove var=\"\" />"
+        ],
+        "description": "Generate c:remove Template"
+    },
+    "c:catch Template": {
+        "prefix": "!catch",
+        "body": [
+            "<c:catch var=\"\">",
+            "</c:catch>"
+        ],
+        "description": "Generate c:remove Template"
+    },
     "c:if Template": {
-        "prefix": "c:if",
+        "prefix": "!if",
         "body": [
             "<c:if test=\"\" >",
             "</c:if>"
         ],
         "description": "Generate c:if Template"
     },
-    "spring Template": {
-        "prefix": "spring",
+    "c:choose Template": {
+        "prefix": "!choose",
+        "body": [       
+            "<c:choose>",
+            "   <c:when test=\"\">",
+            "   </c:when>",
+            "",
+            "   <c:otherwise>",
+            "   </c:othersie>",
+            "</c:if>"
+        ],
+        "description": "Generate c:choose Template"
+    },
+    "c:import Template": {
+        "prefix": "!import",
         "body": [
-
+            "<c:import var=\"\" url=\"\" />"
+        ],
+        "description": "Generate c:import Template"
+    },
+    "c:forEach Template": {
+        "prefix": "!forEach",
+        "body": [
+            "<c:forEach items=\"\" var=\"\">",
+            "</c:forEach>"
+        ],
+        "description": "Generate c:forEach Template"
+    },
+    "c:url Template": {
+        "prefix": "!url",
+        "body": [
+            "<c:url value=\"\" />"
+        ],
+        "description": "Generate c:url Template"
+    },
+    "spring Template": {
+        "prefix": "!spring",
+        "body": [
+            "<spring:theme code=\"\"/>"
         ],
         "description": "Generate spring Template"
     }

@@ -2,7 +2,13 @@
     "name": "jstlsnippets",
     "displayName": "JSTL Snippets",
     "description": "Simple JSTL Snippets Generator",
-    "version": "1.0.0",
+    "version": "0.0.1",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/shkrew/JSTL-Snippets"
+    },
+    "publisher": "Shkrew",
+    "icon": "icon.png",
     "engines": {
         "vscode": "^1.49.0"
     },
@@ -12,7 +18,7 @@
     "contributes": {
         "snippets": [
             {
-                "language": "jstl",
+                "language": "jsp",
                 "path": "./snippets/snippets.code-snippets"
             }
         ]
