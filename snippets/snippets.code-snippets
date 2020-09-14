@@ -2,28 +2,28 @@
     "c:out Template": {
         "prefix": "!out",
         "body": [
-            "<c:if value=\"\" />"
+            "<c:out value=\"$1\" />"
         ],
         "description": "Generate c:out Template"
     },
     "c:set Template": {
         "prefix": "!set",
         "body": [
-            "<c:set var=\"\" scope=\"\" value=\"\"/>"
+            "<c:set var=\"$1\" scope=\"$2\" value=\"$3\"/>"
         ],
         "description": "Generate c:set Template"
     },
     "c:remove Template": {
         "prefix": "!remove",
         "body": [
-            "<c:remove var=\"\" />"
+            "<c:remove var=\"$1\" scope=\"$2\" />"
         ],
         "description": "Generate c:remove Template"
     },
     "c:catch Template": {
         "prefix": "!catch",
         "body": [
-            "<c:catch var=\"\">",
+            "<c:catch var=\"$1\">",
             "</c:catch>"
         ],
         "description": "Generate c:remove Template"
@@ -31,7 +31,7 @@
     "c:if Template": {
         "prefix": "!if",
         "body": [
-            "<c:if test=\"\" >",
+            "<c:if test=\"$1\" >",
             "</c:if>"
         ],
         "description": "Generate c:if Template"
@@ -40,26 +40,26 @@
         "prefix": "!choose",
         "body": [       
             "<c:choose>",
-            "   <c:when test=\"\">",
+            "   <c:when test=\"$1\">",
             "   </c:when>",
             "",
             "   <c:otherwise>",
             "   </c:othersie>",
-            "</c:if>"
+            "</c:choose>"
         ],
         "description": "Generate c:choose Template"
     },
     "c:import Template": {
         "prefix": "!import",
         "body": [
-            "<c:import var=\"\" url=\"\" />"
+            "<c:import var=\"$1\" url=\"$2\" />"
         ],
         "description": "Generate c:import Template"
     },
     "c:forEach Template": {
         "prefix": "!forEach",
         "body": [
-            "<c:forEach items=\"\" var=\"\">",
+            "<c:forEach items=\"$1\" var=\"$2\">",
             "</c:forEach>"
         ],
         "description": "Generate c:forEach Template"
@@ -67,14 +67,14 @@
     "c:url Template": {
         "prefix": "!url",
         "body": [
-            "<c:url value=\"\" />"
+            "<c:url value=\"$1\" />"
         ],
         "description": "Generate c:url Template"
     },
     "spring Template": {
         "prefix": "!spring",
         "body": [
-            "<spring:theme code=\"\"/>"
+            "<spring:theme code=\"$1\"/>"
         ],
         "description": "Generate spring Template"
     }
