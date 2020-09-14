@@ -1,0 +1,17 @@
+{
+    "c:if Template": {
+        "prefix": "c:if",
+        "body": [
+            "<c:if test=\"\" >",
+            "</c:if>"
+        ],
+        "description": "Generate c:if Template"
+    },
+    "spring Template": {
+        "prefix": "spring",
+        "body": [
+
+        ],
+        "description": "Generate spring Template"
+    }
+}
