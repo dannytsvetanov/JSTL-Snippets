@@ -49,6 +49,22 @@
         ],
         "description": "Generate c:choose Template"
     },
+    "c:when Template": {
+        "prefix": "!when",
+        "body": [
+            "<c:when test=\"$1\" >",
+            "</c:when>"
+        ],
+        "description": "Generate c:when Template"
+    },
+    "c:otherwise Template": {
+        "prefix": "!otherwise",
+        "body": [
+            "<c:otherwise>",
+            "</c:otherwise>"
+        ],
+        "description": "Generate c:otherwise Template"
+    },
     "c:import Template": {
         "prefix": "!import",
         "body": [
@@ -64,6 +80,28 @@
         ],
         "description": "Generate c:forEach Template"
     },
+    "c:forTokens Template": {
+        "prefix": "!forTokens",
+        "body": [
+            "<c:forTokens items=\"$1\" delims=\"$2\" var=\"$3\" >",
+            "</c:forTokens>"
+        ],
+        "description": "Generate c:forTokens Template"
+    },
+    "c:param Template": {
+        "prefix": "!param",
+        "body": [
+            "<c:param name=\"$1\" value=\"$2\" />"
+        ],
+        "description": "Generate c:param Template"
+    },
+    "c:redirect Template": {
+        "prefix": "!redirect",
+        "body": [
+            "<c:redirect url=\"$1\" />"
+        ],
+        "description": "Generate c:redirect Template"
+    },
     "c:url Template": {
         "prefix": "!url",
         "body": [
@@ -77,5 +115,22 @@
             "<spring:theme code=\"$1\"/>"
         ],
         "description": "Generate spring Template"
+    },
+    "print Template": {
+        "prefix": "!print",
+        "body": [
+            "<c:set var=\"object\" value=\"${product}\" />",
+            "<c:if test=\"${not empty object['class'].declaredFields}\">",
+            "   <h2>Declared fields <em>&dollar;{object.name}</em></h2>",
+            "   <ul>",
+            "       <c:forEach var=\"field\" items=\"${object['class'].declaredFields}\">",
+            "           <c:catch><li><span style=\"font-weight: bold\">",
+            "               ${field.name}: </span>${object[field.name]}</li>",
+            "           </c:catch>",
+            "       </c:forEach>",
+            "   </ul>",
+            "</c:if>"
+        ],
+        "description": "Generate print Template"
     }
 }

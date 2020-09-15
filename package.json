@@ -2,7 +2,7 @@
     "name": "jstlsnippets",
     "displayName": "JSTL Snippets",
     "description": "Simple JSTL Snippets Generator",
-    "version": "0.0.2",
+    "version": "1.0.0",
     "repository": {
         "type": "git",
         "url": "https://github.com/shkrew/JSTL-Snippets"
