@@ -4,7 +4,8 @@ This is an extensions that generates snippets for JSTL code.
 
 ## Features
 
-This extension allows you to quickly and easily generate template JSTL code templates. Below is a list of commands :
+This extension allows you to quickly and easily generate template JSTL code templates. Below is a list of commands
+
     /* c: commands */
     !out
     !set
@@ -37,6 +38,10 @@ Publisher: Patrik Thorsson
 VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=pthorsson.vscode-jsp
 
 Once installed all .jsp and .tag files should be recognised as JSP if not you can change it in the bottom right corner. 
+
+### 1.0.1
+
+Fixed bug with c:choose command
 
 ### 1.0.0
 
