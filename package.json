@@ -1,6 +1,6 @@
 {
-    "name": "jstlsnippets",
-    "displayName": "JSTL Snippets",
+    "name": "jstlsnippets2",
+    "displayName": "JSTL Snippets 2",
     "description": "Simple JSTL Snippets Generator",
     "version": "1.0.1",
     "repository": {
@@ -19,6 +19,14 @@
         "snippets": [
             {
                 "language": "jsp",
+                "path": "./snippets/snippets.code-snippets"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/snippets.code-snippets"
+            },
+            {
+                "language": "php",
                 "path": "./snippets/snippets.code-snippets"
             }
         ]
