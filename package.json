@@ -1,6 +1,6 @@
 {
-    "name": "jstlsnippets2",
-    "displayName": "JSTL Snippets 2",
+    "name": "jstlsnippets",
+    "displayName": "JSTL Snippets",
     "description": "Simple JSTL Snippets Generator",
     "version": "1.0.1",
     "repository": {
